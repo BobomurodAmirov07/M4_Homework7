@@ -151,6 +151,7 @@ class Calculator(P.QWidget):
 
     def clear(self):
         self.li1.setText("")
+        self.lst = list()
 
     def result(self):
         self.li1.setText((str(eval("".join(self.lst)))))
